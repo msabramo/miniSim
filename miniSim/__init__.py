@@ -159,7 +159,7 @@ class MobileRobot(pygame.sprite.Sprite):
         if distance <= 0:
             distanceRange = -distanceRange
             step = -step
-        for i in range(distanceRange):
+        for i in range(int(distanceRange)):
             self.wait(self.delay)
             dx = step*math.cos(math.radians(self.heading))
             dy = -step*math.sin(math.radians(self.heading))
